@@ -9,7 +9,6 @@ export default defineConfig({
     }
   },
   server: {
-    host: '0.0.0.0', // Make the server accessible from other devices on the network
     port: 3000,
     open: true 
   },
