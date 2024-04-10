@@ -1,8 +1,6 @@
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import express from 'express'; // Import Express
-
-const app = express(); // Create Express app instance
 
 export default defineConfig({
   plugins: [react()],
@@ -12,7 +10,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 10000,
+    port: 3000, // Vite's development server port
     open: true 
   },
   build: {
@@ -22,9 +20,3 @@ export default defineConfig({
     outDir: 'dist'
   },
 });
-
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
