@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -10,7 +9,8 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3000, // Vite's development server port
+    host: '0.0.0.0', // Make the server accessible from other devices on the network
+    port: 3000,
     open: true 
   },
   build: {
