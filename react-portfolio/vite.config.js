@@ -12,7 +12,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3003,
+    port: 10000,
     open: true 
   },
   build: {
@@ -23,7 +23,7 @@ export default defineConfig({
   },
 });
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
